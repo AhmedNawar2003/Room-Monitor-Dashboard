@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 Room Monitor Dashboard
 
-## Getting Started
+A responsive and interactive room monitoring dashboard built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **Shadcn UI**.  
+It displays **VIP** and **Standard** room details along with patient status in a clean, modern interface.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ✅ Responsive Grid layout for rooms (VIP & Standard)
+- 🟢 **Status Badges** for each room:
+  - ✅ Ready
+  - ❌ Occupied
+  - ⚠️ Needs Cleaning
+- 🔍 Search by patient name, type, or room number
+- 🧭 Filter rooms by status using **Tabs UI**
+- 🪟 Modal with full room & patient details
+- 🔔 Toast notifications on interactions
+- ⚡ Smooth UX with hover effects, transitions, and accessibility (ESC to close modals)
+
+---
+
+## ⚙️ Technologies Used
+
+- ⚛️ [Next.js](https://nextjs.org/) — React framework
+- 🟦 [TypeScript](https://www.typescriptlang.org/)
+- 🌬️ [Tailwind CSS](https://tailwindcss.com/)
+- 💠 [Shadcn UI](https://ui.shadcn.com/)
+- 🎯 [Axios](https://axios-http.com/) — data fetching
+- 📦 [React Icons](https://react-icons.github.io/react-icons/)
+- 🔔 [Sonner](https://sonner.toastui.com/) — toast notifications
+
+---
+
+## 🚀 Getting Started
+
+## 🌐 Deployment
+    Live Preview == > [ ]
+
+---
+## 🛠️ Usage
+Use the search bar to filter rooms by patient name, room type, or room number.
+
+Use the Tabs to filter by room status (Ready, Occupied, Needs Cleaning).
+
+Click any card to open detailed room info in a modal.
+
+Press ESC or click close icon to dismiss modal.
+
+---
+## 🧱 Project Structure
+```
+/app or /pages      ➜  Next.js routing
+/components         ➜  Reusable UI components (RoomCard, RoomModal, SearchFilter, etc.)
+/public/data        ➜  Mock data (rooms.json)
+/styles             ➜  Tailwind and global CSS
+
+```
+---
+
+### Prerequisites
+
+- Node.js v16+
+- npm or yarn
+
+### Installation
 
 ```bash
-npm run dev
+git clone https://github.com/yourusername/room-monitor-dashboard.git
+cd room-monitor-dashboard
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+yarn install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
