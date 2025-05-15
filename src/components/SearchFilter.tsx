@@ -16,8 +16,6 @@ type Props = {
 export default function SearchFilter({
   searchText,
   setSearchText,
-  filterType,
-  setFilterType,
   filterStatus,
   setFilterStatus,
 }: Props) {
@@ -31,7 +29,10 @@ export default function SearchFilter({
           onChange={(e) => setSearchText(e.target.value)}
           className="pr-10"
         />
-        <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+        <Search
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+          size={18}
+        />
       </div>
 
       <Tabs
@@ -40,16 +41,19 @@ export default function SearchFilter({
         className="w-auto"
       >
         <TabsList>
-          <TabsTrigger value="All" className="flex-grow text-center">
+          <TabsTrigger value="All" className="flex-grow text-center cursor-pointer">
             All Statuses
           </TabsTrigger>
-          <TabsTrigger value="Ready" className="flex-grow text-center">
+          <TabsTrigger value="Ready" className="flex-grow text-center cursor-pointer">
             Ready
           </TabsTrigger>
-          <TabsTrigger value="Occupied" className="flex-grow text-center">
+          <TabsTrigger value="Occupied" className="flex-grow text-center cursor-pointer">
             Occupied
           </TabsTrigger>
-          <TabsTrigger value="Needs Cleaning" className="flex-grow text-center whitespace-nowrap">
+          <TabsTrigger
+            value="Needs Cleaning"
+            className="flex-grow text-center cursor-pointer whitespace-nowrap"
+          >
             Needs Cleaning
           </TabsTrigger>
         </TabsList>

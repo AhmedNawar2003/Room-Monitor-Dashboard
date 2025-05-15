@@ -74,9 +74,9 @@ export default function Home() {
         className="mb-6 max-w-3xl mx-auto"
       >
         <TabsList className="w-full flex justify-center">
-          <TabsTrigger value="All">All</TabsTrigger>
-          <TabsTrigger value="VIP">VIP</TabsTrigger>
-          <TabsTrigger value="Standard">Standard</TabsTrigger>
+          <TabsTrigger className="cursor-pointer" value="All" >All</TabsTrigger>
+          <TabsTrigger className="cursor-pointer" value="VIP">VIP</TabsTrigger>
+          <TabsTrigger className="cursor-pointer" value="Standard">Standard</TabsTrigger>
         </TabsList>
       </Tabs>
 
