@@ -1,0 +1,233 @@
+[
+    {
+      "id": 1,
+      "roomNumber": "VIP-001",
+      "type": "VIP",
+      "patient": "Mohamed Salah",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00001",
+      "admittedDate": "01/05/2025",
+      "los": "5 days"
+    },
+    {
+      "id": 2,
+      "roomNumber": "STD-001",
+      "type": "Standard",
+      "patient": "Mona Khaled",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00002",
+      "admittedDate": "28/04/2025",
+      "los": "2 days"
+    },
+    {
+      "id": 3,
+      "roomNumber": "VIP-002",
+      "type": "VIP",
+      "patient": "Tarek Hamdy",
+      "status": "Needs Cleaning",
+      "mrn": "HLC-PAT-2025-00003",
+      "admittedDate": "29/04/2025",
+      "los": "3 days"
+    },
+    {
+      "id": 4,
+      "roomNumber": "STD-002",
+      "type": "Standard",
+      "patient": "Ahmed Ali",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00004",
+      "admittedDate": "30/04/2025",
+      "los": "4 days"
+    },
+    {
+      "id": 5,
+      "roomNumber": "VIP-003",
+      "type": "VIP",
+      "patient": "Sara Mohamed",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00005",
+      "admittedDate": "02/05/2025",
+      "los": "1 day"
+    },
+    {
+      "id": 6,
+      "roomNumber": "STD-003",
+      "type": "Standard",
+      "patient": "Laila Hassan",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00006",
+      "admittedDate": "25/04/2025",
+      "los": "7 days"
+    },
+    {
+      "id": 7,
+      "roomNumber": "STD-004",
+      "type": "Standard",
+      "patient": "Omar Adel",
+      "status": "Needs Cleaning",
+      "mrn": "HLC-PAT-2025-00007",
+      "admittedDate": "23/04/2025",
+      "los": "9 days"
+    },
+    {
+      "id": 8,
+      "roomNumber": "STD-005",
+      "type": "Standard",
+      "patient": "Hana Ibrahim",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00008",
+      "admittedDate": "01/05/2025",
+      "los": "5 days"
+    },
+    {
+      "id": 9,
+      "roomNumber": "STD-006",
+      "type": "Standard",
+      "patient": "Mona Youssef",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00009",
+      "admittedDate": "27/04/2025",
+      "los": "4 days"
+    },
+    {
+      "id": 10,
+      "roomNumber": "STD-007",
+      "type": "Standard",
+      "patient": "Ahmed Nabil",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00010",
+      "admittedDate": "03/05/2025",
+      "los": "1 day"
+    },
+    {
+      "id": 11,
+      "roomNumber": "STD-008",
+      "type": "Standard",
+      "patient": "Salma Farouk",
+      "status": "Needs Cleaning",
+      "mrn": "HLC-PAT-2025-00011",
+      "admittedDate": "22/04/2025",
+      "los": "10 days"
+    },
+    {
+      "id": 12,
+      "roomNumber": "STD-009",
+      "type": "Standard",
+      "patient": "Fatma Samir",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00012",
+      "admittedDate": "26/04/2025",
+      "los": "6 days"
+    },
+    {
+      "id": 13,
+      "roomNumber": "STD-010",
+      "type": "Standard",
+      "patient": "Karim Zaki",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00013",
+      "admittedDate": "02/05/2025",
+      "los": "2 days"
+    },
+    {
+      "id": 14,
+      "roomNumber": "STD-011",
+      "type": "Standard",
+      "patient": "Khaled Said",
+      "status": "Needs Cleaning",
+      "mrn": "HLC-PAT-2025-00014",
+      "admittedDate": "21/04/2025",
+      "los": "11 days"
+    },
+    {
+      "id": 15,
+      "roomNumber": "STD-012",
+      "type": "Standard",
+      "patient": "Sara Ibrahim",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00015",
+      "admittedDate": "28/04/2025",
+      "los": "5 days"
+    },
+    {
+      "id": 16,
+      "roomNumber": "STD-013",
+      "type": "Standard",
+      "patient": "Mohamed Fathy",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00016",
+      "admittedDate": "04/05/2025",
+      "los": "1 day"
+    },
+    {
+      "id": 17,
+      "roomNumber": "STD-014",
+      "type": "Standard",
+      "patient": "Youssef Kamal",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00017",
+      "admittedDate": "29/04/2025",
+      "los": "3 days"
+    },
+    {
+      "id": 18,
+      "roomNumber": "STD-015",
+      "type": "Standard",
+      "patient": "Rania Adel",
+      "status": "Needs Cleaning",
+      "mrn": "HLC-PAT-2025-00018",
+      "admittedDate": "20/04/2025",
+      "los": "12 days"
+    },
+    {
+      "id": 19,
+      "roomNumber": "STD-016",
+      "type": "Standard",
+      "patient": "Nour Hassan",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00019",
+      "admittedDate": "03/05/2025",
+      "los": "2 days"
+    },
+    {
+      "id": 20,
+      "roomNumber": "STD-017",
+      "type": "Standard",
+      "patient": "Amir Fouad",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00020",
+      "admittedDate": "30/04/2025",
+      "los": "4 days"
+    },
+    {
+      "id": 21,
+      "roomNumber": "STD-018",
+      "type": "Standard",
+      "patient": "Dina Samir",
+      "status": "Ready",
+      "mrn": "HLC-PAT-2025-00021",
+      "admittedDate": "04/05/2025",
+      "los": "1 day"
+    },
+    {
+      "id": 22,
+      "roomNumber": "STD-019",
+      "type": "Standard",
+      "patient": "Hana Adel",
+      "status": "Needs Cleaning",
+      "mrn": "HLC-PAT-2025-00022",
+      "admittedDate": "19/04/2025",
+      "los": "13 days"
+    },
+    {
+      "id": 23,
+      "roomNumber": "STD-020",
+      "type": "Standard",
+      "patient": "Tamer Youssef",
+      "status": "Occupied",
+      "mrn": "HLC-PAT-2025-00023",
+      "admittedDate": "01/05/2025",
+      "los": "5 days"
+    }
+  ]
+  
