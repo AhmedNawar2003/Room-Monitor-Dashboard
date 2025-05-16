@@ -6,7 +6,6 @@ import RoomCard from "./RoomCard";
 import RoomModal from "./RoomModal";
 import SearchFilter from "./SearchFilter";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { toast } from "sonner";
 import { FaDoorOpen } from "react-icons/fa";
 import StatsSummary from "./StatsSummary";
 import Legend from "./Legend";
@@ -54,13 +53,6 @@ export default function Home() {
 
     return matchesSearch && matchesType && matchesStatus;
   });
-
-  const handleOpenRoom = (room: Room) => {
-    setSelectedRoom(room);
-    toast(`Opened Room ${room.roomNumber}`, {
-      description: `Patient: ${room.patient}`,
-    });
-  };
   return (
     <main className="min-h-screen p-6 bg-app text-app">
       <h1 className="bg-[#19a1e9] text-white p-5 rounded-2xl text-xl md:text-3xl font-bold mb-6 text-center flex items-center justify-center gap-3">
