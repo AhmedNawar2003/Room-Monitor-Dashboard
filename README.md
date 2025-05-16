@@ -32,8 +32,6 @@ It displays **VIP** and **Standard** room details along with patient status in a
 
 ---
 
-## 🚀 Getting Started
-
 ## 🌐 Deployment
   [🔗 Live Preview](https://room-monitor-dashboard.vercel.app)
 
@@ -63,8 +61,8 @@ Press ESC or click close icon to dismiss modal.
 
 - Node.js v16+
 - npm or yarn
-
-### Installation
+ 
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/yourusername/room-monitor-dashboard.git
