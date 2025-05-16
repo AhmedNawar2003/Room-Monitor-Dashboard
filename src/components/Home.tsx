@@ -8,6 +8,9 @@ import SearchFilter from "./SearchFilter";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import { FaDoorOpen } from "react-icons/fa";
+import StatsSummary from "./StatsSummary";
+import Legend from "./Legend";
+import LiveClock from "./LiveClock";
 
 type Room = {
   id: number;
@@ -42,9 +45,8 @@ export default function Home() {
 
   const filteredRooms = rooms.filter((room) => {
     const matchesSearch =
-      room.patient.toLowerCase().includes(searchText.toLowerCase()) ||
-      room.type.toLowerCase().includes(searchText.toLowerCase()) ||
-      room.roomNumber.toLowerCase().includes(searchText.toLowerCase());
+      room.roomNumber.toLowerCase().includes(searchText.toLowerCase()) ||
+      room.status.toLowerCase().includes(searchText.toLowerCase());
 
     const matchesType = filterType === "All" || room.type === filterType;
     const matchesStatus =
@@ -59,24 +61,47 @@ export default function Home() {
       description: `Patient: ${room.patient}`,
     });
   };
-
+  const tabs = ["All", "VIP", "Standard"];
   return (
     <main className="min-h-screen p-6 bg-app text-app">
       <h1 className="bg-[#19a1e9] text-white p-5 rounded-2xl text-xl md:text-3xl font-bold mb-6 text-center flex items-center justify-center gap-3">
         <FaDoorOpen className="text-white" />
         Room Monitor Dashboard
       </h1>
-
+      <StatsSummary
+        stats={{
+          available: rooms.filter((r) => r.status === "Ready").length,
+          occupied: rooms.filter((r) => r.status === "Occupied").length,
+          cleaning: rooms.filter((r) => r.status === "Needs Cleaning").length,
+        }}
+      />
+      <Legend />
       {/* Tabs to Filter Room Type */}
       <Tabs
         defaultValue="All"
         onValueChange={setFilterType}
         className="mb-6 max-w-3xl mx-auto"
       >
-        <TabsList className="w-full flex justify-center">
-          <TabsTrigger className="cursor-pointer" value="All" >All</TabsTrigger>
-          <TabsTrigger className="cursor-pointer" value="VIP">VIP</TabsTrigger>
-          <TabsTrigger className="cursor-pointer" value="Standard">Standard</TabsTrigger>
+        <TabsList className="w-full flex justify-center gap-4">
+          {["All", "VIP", "Standard"].map((tab) => (
+            <TabsTrigger
+              key={tab}
+              value={tab}
+              className="
+          cursor-pointer 
+          px-4 py-2 
+          rounded-md 
+          transition 
+          duration-300 
+          ease-in-out 
+          data-[state=active]:bg-blue-700 
+          data-[state=active]:text-white
+          focus:outline-none focus:ring-2 focus:ring-blue-400
+        "
+            >
+              {tab}
+            </TabsTrigger>
+          ))}
         </TabsList>
       </Tabs>
 
@@ -91,7 +116,7 @@ export default function Home() {
       />
 
       {/* Room Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {filteredRooms.length > 0 ? (
           filteredRooms.map((room) => (
             <div key={room.id} onClick={() => handleOpenRoom(room)}>
@@ -104,7 +129,7 @@ export default function Home() {
           </p>
         )}
       </div>
-
+      <LiveClock />
       {/* Modal */}
       <RoomModal
         isOpen={!!selectedRoom}
