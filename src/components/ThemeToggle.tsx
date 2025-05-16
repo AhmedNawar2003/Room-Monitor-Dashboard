@@ -5,7 +5,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
-  const [mounted, setMounted] = useState(false); // Prevent mismatch
+  const [mounted, setMounted] = useState(false); 
 
   useEffect(() => {
     const saved = localStorage.getItem("theme") as "light" | "dark" | null;
@@ -22,7 +22,7 @@ export default function ThemeToggle() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-  if (!mounted) return null; // Avoid rendering on server
+  if (!mounted) return null; 
 
   return (
     <button

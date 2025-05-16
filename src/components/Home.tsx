@@ -75,7 +75,6 @@ export default function Home() {
         }}
       />
       <Legend />
-      {/* Tabs to Filter Room Type */}
       <Tabs
         defaultValue="All"
         onValueChange={setFilterType}
@@ -103,8 +102,6 @@ export default function Home() {
           ))}
         </TabsList>
       </Tabs>
-
-      {/* Filters (Search + Status) */}
       <SearchFilter
         searchText={searchText}
         setSearchText={setSearchText}
@@ -113,8 +110,6 @@ export default function Home() {
         filterStatus={filterStatus}
         setFilterStatus={setFilterStatus}
       />
-
-      {/* Room Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {filteredRooms.length > 0 ? (
           filteredRooms.map((room) => (
@@ -129,7 +124,6 @@ export default function Home() {
         )}
       </div>
       <LiveClock />
-      {/* Modal */}
       <RoomModal
         isOpen={!!selectedRoom}
         onClose={() => setSelectedRoom(null)}
