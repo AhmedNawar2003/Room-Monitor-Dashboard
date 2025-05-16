@@ -13,9 +13,8 @@ It displays **VIP** and **Standard** room details along with patient status in a
   - ❌ Occupied
   - ⚠️ Needs Cleaning
 - 🔍 Search by patient name, type, or room number
-- 🧭 Filter rooms by status using **Tabs UI**
+- 🧭 Filter rooms by room number or status using **Tabs UI**
 - 🪟 Modal with full room & patient details
-- 🔔 Toast notifications on interactions
 - ⚡ Smooth UX with hover effects, transitions, and accessibility (ESC to close modals)
 
 ---
@@ -28,8 +27,6 @@ It displays **VIP** and **Standard** room details along with patient status in a
 - 💠 [Shadcn UI](https://ui.shadcn.com/)
 - 🎯 [Axios](https://axios-http.com/) — data fetching
 - 📦 [React Icons](https://react-icons.github.io/react-icons/)
-- 🔔 [Sonner](https://sonner.toastui.com/) — toast notifications
-
 ---
 
 ## 🌐 Deployment
@@ -38,7 +35,7 @@ It displays **VIP** and **Standard** room details along with patient status in a
 
 ---
 ## 🛠️ Usage
-Use the search bar to filter rooms by patient name, room type, or room number.
+Use the search bar to filter rooms by room number or status.
 
 Use the Tabs to filter by room status (Ready, Occupied, Needs Cleaning).
 
