@@ -35,7 +35,8 @@ It displays **VIP** and **Standard** room details along with patient status in a
 ## 🚀 Getting Started
 
 ## 🌐 Deployment
-    Live Preview == > [ https://room-monitor-dashboard.vercel.app/ ]
+  [🔗 Live Preview](https://room-monitor-dashboard.vercel.app)
+
 
 ---
 ## 🛠️ Usage
