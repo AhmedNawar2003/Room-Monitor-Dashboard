@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "A responsive and interactive room monitoring dashboard built using Next.js, TypeScript, Tailwind CSS, and Shadcn UI.It displays VIP and Standard room details along with patient status in a clean, modern interface",
   icons: {
-    icon: "/image/favicon.ico",
+    icon: "/image/icon.ico",
   },
 };
 
