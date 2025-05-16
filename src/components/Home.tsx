@@ -53,6 +53,10 @@ export default function Home() {
 
     return matchesSearch && matchesType && matchesStatus;
   });
+
+  const handleOpenRoom = (room: Room) => {
+    setSelectedRoom(room);
+  };
   return (
     <main className="min-h-screen p-6 bg-app text-app">
       <h1 className="bg-[#19a1e9] text-white p-5 rounded-2xl text-xl md:text-3xl font-bold mb-6 text-center flex items-center justify-center gap-3">
