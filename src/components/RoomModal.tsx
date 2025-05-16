@@ -32,10 +32,10 @@ export default function RoomModal({ isOpen, onClose, room }: Props) {
 
   return (
     <div className="fixed inset-0 bg-opacity-40 flex items-center justify-center z-50">
-      <div className="bg-white text-black rounded-lg p-6 w-full max-w-md shadow-xl relative">
+      <div className="bg-white dark:bg-gray-900 dark:text-white   text-black rounded-lg p-6 w-full max-w-md shadow-xl relative">
         <button
           onClick={onClose}
-          className="absolute cursor-pointer top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold"
+          className="absolute cursor-pointer top-2 right-2 text-gray-500 dark:text-white hover:text-gray-800 text-2xl font-bold"
         >
           &times;
         </button>
