@@ -10,6 +10,7 @@ import { FaDoorOpen } from "react-icons/fa";
 import StatsSummary from "./StatsSummary";
 import Legend from "./Legend";
 import LiveClock from "./LiveClock";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 type Room = {
   id: number;
@@ -119,6 +120,7 @@ export default function Home() {
           </p>
         )}
       </div>
+      <ScrollToTopButton/>
       <LiveClock />
       <RoomModal
         isOpen={!!selectedRoom}

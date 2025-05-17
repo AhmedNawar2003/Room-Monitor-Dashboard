@@ -14,7 +14,7 @@ export default function LiveClock() {
   if (!time) return null;
 
   return (
-    <div className="fixed right-5 bottom-5 text-center mt-6 bg-[#19a1e9] dark:bg-gray-900 rounded-2xl w-fit p-3 text-white">
+    <div className="fixed right-20 md:right-20 bottom-1 md:bottom-3 text-center mt-6 bg-[#19a1e9] dark:bg-gray-900 rounded-2xl w-fit p-3 text-white">
       🕒 {time.toLocaleTimeString([], { hour12: false })}
     </div>
   );
