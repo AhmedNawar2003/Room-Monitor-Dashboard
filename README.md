@@ -3,17 +3,18 @@
 A responsive and interactive room monitoring dashboard built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **Shadcn UI**.  
 It displays **VIP** and **Standard** room details along with patient status in a clean, modern interface.
 
-![cover](public/image/cover.png)
-
 ---
 
 ## ✨ Features
 
 - ✅ Responsive Grid layout for rooms (VIP & Standard)
+- 🟢 *Status Badges* for each room:
+  - ✅ Ready
+  - ❌ Occupied
+  - ⚠ Needs Cleaning
 - 🔍 **Search bar** with icon — filter by room number or status
 - 🧭 **Tabs UI** for room filtering by type/status
 - 🪟 **Modal** with full patient and room details
-- 🔔 **Toast Notifications** for feedback
 - 🎨 **Dark/Light mode toggle**
 - ⏰ **Live Clock** in 24-hour format
 - 🔁 **Scroll-To-Top** FAB for mobile users
@@ -30,7 +31,6 @@ It displays **VIP** and **Standard** room details along with patient status in a
 - 💠 [Shadcn UI](https://ui.shadcn.com/)
 - 🎯 [Axios](https://axios-http.com/)
 - 📦 [React Icons](https://react-icons.github.io/react-icons/)
-- 📢 [Sonner](https://sonner.toast.dev/) for toasts
 - 🧩 [Lucide Icons](https://lucide.dev/) for icons
 
 ---
