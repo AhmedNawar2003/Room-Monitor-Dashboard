@@ -59,7 +59,7 @@ export default function Home() {
   };
   return (
     <main className="min-h-screen p-6 bg-app text-app">
-      <h1 className="bg-[#19a1e9] text-white p-5 rounded-2xl text-xl md:text-3xl font-bold mb-6 text-center flex items-center justify-center gap-3">
+      <h1 className="bg-[#19a1e9] dark:bg-gray-900 text-white p-5 rounded-2xl text-xl md:text-3xl font-bold mb-6 text-center flex items-center justify-center gap-3">
         <FaDoorOpen className="text-white" />
         Room Monitor Dashboard
       </h1>

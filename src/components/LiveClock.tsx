@@ -6,16 +6,16 @@ export default function LiveClock() {
 
   useEffect(() => {
     const now = new Date();
-    setTime(now); 
+    setTime(now);
     const interval = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(interval);
   }, []);
 
-  if (!time) return null; 
+  if (!time) return null;
 
   return (
-    <div className="fixed right-5 bottom-5 text-center mt-6 bg-[#19a1e9] rounded-2xl w-fit p-3 text-white">
-      🕒 {time.toLocaleTimeString()}
+    <div className="fixed right-5 bottom-5 text-center mt-6 bg-[#19a1e9] dark:bg-gray-900 rounded-2xl w-fit p-3 text-white">
+      🕒 {time.toLocaleTimeString([], { hour12: false })}
     </div>
   );
 }
