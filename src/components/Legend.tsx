@@ -14,8 +14,8 @@ export default function Legend() {
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="flex items-center gap-2 cursor-help">
-              <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
-              Available
+              <span className="w-3 h-3 bg-[#4CAF50] rounded-full"></span>
+              Ready
             </div>
           </TooltipTrigger>
           <TooltipContent>
@@ -26,7 +26,7 @@ export default function Legend() {
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="flex items-center gap-2 cursor-help">
-              <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-[#F44336] rounded-full"></span>
               Occupied
             </div>
           </TooltipTrigger>
@@ -38,7 +38,7 @@ export default function Legend() {
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="flex items-center gap-2 cursor-help">
-              <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+              <span className="w-3 h-3 bg-[#FFC107] rounded-full"></span>
              Needs Cleaning
             </div>
           </TooltipTrigger>
