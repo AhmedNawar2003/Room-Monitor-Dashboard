@@ -53,7 +53,7 @@ export default function RoomModal({ isOpen, onClose, room }: Props) {
           {room.status}
         </span>
 
-        <h2 className="text-2xl font-semibold mb-4 mt-6">
+        <h2 className="sm:text-xl md:text-2xl font-semibold mb-4 mt-6">
           Room {room.roomNumber} Details
         </h2>
         <p className="mb-2">
