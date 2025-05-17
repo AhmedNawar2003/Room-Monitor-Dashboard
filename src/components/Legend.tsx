@@ -39,7 +39,7 @@ export default function Legend() {
           <TooltipTrigger asChild>
             <div className="flex items-center gap-2 cursor-help">
               <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-              Cleaning
+             Needs Cleaning
             </div>
           </TooltipTrigger>
           <TooltipContent>

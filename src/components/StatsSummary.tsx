@@ -34,7 +34,7 @@ export default function StatsSummary({ stats }: Props) {
         </Card>
         <Card className="text-center shadow-md border-yellow-200">
           <CardHeader>
-            <CardTitle className="text-yellow-500">Cleaning</CardTitle>
+            <CardTitle className="text-yellow-500">Needs Cleaning</CardTitle>
           </CardHeader>
           <CardContent>
             <span className="md:text-2xl font-bold text-white bg-yellow-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
