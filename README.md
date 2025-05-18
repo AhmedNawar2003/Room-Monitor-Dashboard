@@ -7,20 +7,22 @@ It displays **VIP** and **Standard** room details along with patient status in a
 
 ## ✨ Features
 
-- ✅ Responsive Grid layout for rooms (VIP & Standard)
-- 🟢 *Status Badges* for each room:
-  - ✅ Ready
-  - ❌ Occupied
-  - ⚠ Needs Cleaning
-- 🔍 **Search bar** with icon — filter by room number or status, plus the ability to search by Name or Room Type to enhance the user experience  
-- 🧭 **Tabs UI** for room filtering by type/status
-- ✨ **Hover effects (scale + shadow) on Cards
-- 🪟 **Modal** with full patient and room details  
-- 🎨 **Dark/Light mode toggle**
-- ⏰ **Live Clock** in 24-hour format
-- 🔁 **Scroll-To-Top** FAB for mobile users
-- 🧠 **Status Summary** cards + Legend
-- 🎨 Smooth UI with transitions & accessibility (ESC to close modals)
+- ✅ Responsive Grid layout for rooms (VIP & Standard) — cards display 3 per row on desktop as required  
+- 🟢 Status Badges for each room:  
+  - ✅ Ready  
+  - ❌ Occupied  
+  - ⚠ Needs Cleaning  
+- 🔍 Search bar with icon — filter by room number or status, plus the ability to search by Name or Room Type to enhance the user experience  
+- 🧭 Tabs UI for room filtering by type/status  
+- ✨ Hover effects (scale + shadow) on Cards  
+- 🪟 Modal with full patient and room details  
+- 🎨 Dark/Light mode toggle — used the required color scheme throughout the UI to ensure consistency and meet design specifications  
+- ⏰ Live Clock in 24-hour format  
+- 🔁 Scroll-To-Top FAB for mobile users  
+- 🧠 Status Summary cards + Legend  
+- 🎨 Smooth UI with transitions & accessibility (ESC to close modals)  
+- 🛠️ Created a Mock API to simulate real data fetching  
+
 
 ---
 
