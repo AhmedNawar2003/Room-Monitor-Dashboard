@@ -8,63 +8,77 @@ It displays **VIP** and **Standard** room details along with patient status in a
 ## ✨ Features
 
 - ✅ Responsive Grid layout for rooms (VIP & Standard)
-- 🟢 **Status Badges** for each room:
+- 🟢 *Status Badges* for each room:
   - ✅ Ready
   - ❌ Occupied
-  - ⚠️ Needs Cleaning
-- 🔍 Search by patient name, type, or room number
-- 🧭 Filter rooms by room number or status using **Tabs UI**
-- 🪟 Modal with full room & patient details
-- ⚡ Smooth UX with hover effects, transitions, and accessibility (ESC to close modals)
+  - ⚠ Needs Cleaning
+- 🔍 **Search bar** with icon — filter by room number or status
+- 🧭 **Tabs UI** for room filtering by type/status
+- 🪟 **Modal** with full patient and room details
+- 🎨 **Dark/Light mode toggle**
+- ⏰ **Live Clock** in 24-hour format
+- 🔁 **Scroll-To-Top** FAB for mobile users
+- 🧠 **Status Summary** cards + Legend
+- 🎨 Smooth UI with transitions & accessibility (ESC to close modals)
 
 ---
 
 ## ⚙️ Technologies Used
 
-- ⚛️ [Next.js](https://nextjs.org/) — React framework
+- ⚛️ [Next.js](https://nextjs.org/)
 - 🟦 [TypeScript](https://www.typescriptlang.org/)
 - 🌬️ [Tailwind CSS](https://tailwindcss.com/)
 - 💠 [Shadcn UI](https://ui.shadcn.com/)
-- 🎯 [Axios](https://axios-http.com/) — data fetching
+- 🎯 [Axios](https://axios-http.com/)
 - 📦 [React Icons](https://react-icons.github.io/react-icons/)
+- 🧩 [Lucide Icons](https://lucide.dev/) for icons
+
 ---
 
 ## 🌐 Deployment
-  [🔗 Live Preview](https://room-monitor-dashboard.vercel.app)
 
+🔗 [Live Preview](https://room-monitor-dashboard.vercel.app)
 
 ---
+
 ## 🛠️ Usage
-Use the search bar to filter rooms by room number or status.
 
-Use the Tabs to filter by room status (Ready, Occupied, Needs Cleaning).
-
-Click any card to open detailed room info in a modal.
-
-Press ESC or click close icon to dismiss modal.
+- Use the search bar to filter rooms by **room number** or **status**
+- Filter by **room type** and **status** using **tabs**
+- Click any room card to open full details in a modal
+- Press `ESC` or the close icon to dismiss the modal
+- Toggle light/dark theme with the moon/sun icon
+- Toasts appear on certain actions for UX feedback
+- Floating button on mobile scrolls to the top
 
 ---
 ## 🧱 Project Structure
 ```
-/app or /pages      ➜  Next.js routing
-/components         ➜  Reusable UI components (RoomCard, RoomModal, SearchFilter, etc.)
-/public/data        ➜  Mock data (rooms.json)
-/styles             ➜  Tailwind and global CSS
+/app or /pages ➜ Next.js routing
+/components ➜ Reusable UI (RoomCard, RoomModal, StatsSummary, etc.)
+/components/ui ➜ Shadcn-generated components
+/public/data ➜ Mock data (rooms.json)
+/styles ➜ Tailwind & global styles
 
 ```
 ---
 
-### Prerequisites
+
+---
+
+### 🧩 Prerequisites
 
 - Node.js v16+
 - npm or yarn
- 
+
+---
+
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/yourusername/room-monitor-dashboard.git
-cd room-monitor-dashboard
+git clone https://github.com/AhmedNawar2003/Room-Monitor-Dashboard.git
+cd Room-Monitor-Dashboard
 npm install
-# or
-yarn install
+npm run dev
+
 
