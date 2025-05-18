@@ -33,7 +33,7 @@ export default function SearchFilter({
           placeholder="Search by room number or status..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          className="pr-10 w-full"
+          className="pr-10 w-full focus:outline-none focus:ring-0 focus:shadow-none"
           name="searchText"
         />
         <Search
@@ -55,7 +55,7 @@ export default function SearchFilter({
               className="w-full cursor-pointer sm:w-auto flex-1 min-w-[120px] px-4 py-2  dark:bg-gray-800  text-center rounded-md transition 
           duration-300 
           ease-in-out 
-          data-[state=active]:bg-blue-700 
+          data-[state=active]:bg-[#19a1e9] 
           data-[state=active]:text-white
           focus:outline-none focus:ring-2 focus:ring-blue-400"
             >

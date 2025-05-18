@@ -44,9 +44,16 @@ export default function Home() {
   }, []);
 
   const filteredRooms = rooms.filter((room) => {
+    const normalizedSearch = searchText
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, " ");
+
     const matchesSearch =
-      room.roomNumber.toLowerCase().includes(searchText.toLowerCase()) ||
-      room.status.toLowerCase().includes(searchText.toLowerCase());
+      room.roomNumber.toLowerCase().includes(normalizedSearch) ||
+      room.status.toLowerCase().includes(normalizedSearch) ||
+      room.patient.toLowerCase().includes(normalizedSearch) ||
+      room.type.toLowerCase().includes(normalizedSearch);
 
     const matchesType = filterType === "All" || room.type === filterType;
     const matchesStatus =
@@ -89,7 +96,7 @@ export default function Home() {
           transition 
           duration-300 
           ease-in-out 
-          data-[state=active]:bg-blue-700 
+          data-[state=active]:bg-[#19a1e9]
           data-[state=active]:text-white
           focus:outline-none focus:ring-2 focus:ring-blue-400
         "
@@ -120,7 +127,7 @@ export default function Home() {
           </p>
         )}
       </div>
-      <ScrollToTopButton/>
+      <ScrollToTopButton />
       <LiveClock />
       <RoomModal
         isOpen={!!selectedRoom}
