@@ -12,9 +12,10 @@ It displays **VIP** and **Standard** room details along with patient status in a
   - ✅ Ready
   - ❌ Occupied
   - ⚠ Needs Cleaning
-- 🔍 **Search bar** with icon — filter by room number or status
+- 🔍 **Search bar** with icon — filter by room number or status, plus the ability to search by Name or Room Type to enhance the user experience  
 - 🧭 **Tabs UI** for room filtering by type/status
-- 🪟 **Modal** with full patient and room details
+- ✨ **Hover effects (scale + shadow) on Cards
+- 🪟 **Modal** with full patient and room details  
 - 🎨 **Dark/Light mode toggle**
 - ⏰ **Live Clock** in 24-hour format
 - 🔁 **Scroll-To-Top** FAB for mobile users
